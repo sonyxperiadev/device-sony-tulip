@@ -1,0 +1,4 @@
+place_a=1
+place_m=8
+place_g=3
+

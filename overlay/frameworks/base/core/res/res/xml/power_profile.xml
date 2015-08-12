@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<device name="Android">
+    <item name="none">0</item>
+    <item name="screen.on">200</item>
+    <item name="screen.full">300</item>
+    <item name="bluetooth.active">10</item>
+    <item name="bluetooth.on">0.1</item>
+    <item name="wifi.on">3</item>
+    <item name="wifi.active">200</item>
+    <item name="wifi.scan">100</item>
+    <item name="dsp.audio">10</item>
+    <item name="dsp.video">50</item>
+    <item name="radio.active">200</item>
+    <item name="radio.scanning">10</item>
+    <item name="gps.on">50</item>
+    <array name="radio.on">
+        <value>2</value>
+        <value>1</value>
+    </array>
+    <array name="cpu.speeds">
+        <value>200000</value>
+        <value>345600</value>
+        <value>400000</value>
+        <value>422400</value>
+        <value>499200</value>
+        <value>533333</value>
+        <value>652800</value>
+        <value>729600</value>
+        <value>800000</value>
+        <value>806400</value>
+        <value>883200</value>
+        <value>960000</value>
+        <value>1036800</value>
+        <value>1113600</value>
+        <value>1190400</value>
+        <value>1267200</value>
+        <value>1344000</value>
+        <value>1420800</value>
+        <value>1497600</value>
+        <value>1536000</value>
+    </array>
+    <item name="cpu.idle">2.5</item>
+    <array name="cpu.active">
+        <value>158</value>
+        <value>210</value>
+        <value>228</value>
+        <value>252</value>
+        <value>279</value>
+        <value>292</value>
+        <value>334</value>
+        <value>364</value>
+        <value>390</value>
+        <value>418</value>
+        <value>440</value>
+        <value>579</value>
+        <value>624</value>
+        <value>777</value>
+        <value>827</value>
+        <value>877</value>
+        <value>927</value>
+        <value>977</value>
+        <value>1027</value>
+        <value>1077</value>
+    </array>
+    <item name="battery.capacity">2400</item>
+    <array name="wifi.batchedscan">
+        <value>.0002</value>
+        <value>.002</value>
+        <value>.02</value>
+        <value>.2</value>
+        <value>2</value>
+    </array>
+</device>
