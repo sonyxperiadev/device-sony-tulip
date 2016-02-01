@@ -36,6 +36,10 @@ PRODUCT_COPY_FILES += \
     device/sony/tulip/rootdir/system/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
     device/sony/tulip/rootdir/system/etc/mixer_paths.xml:system/etc/mixer_paths.xml
 
+# NFC config
+PRODUCT_PACKAGES += nfc_nci.tulip
+ADDITIONAL_DEFAULT_PROPERTIES += ro.hardware.nfc_nci=tulip
+
 PRODUCT_NAME := aosp_e2303
 PRODUCT_DEVICE := tulip
 PRODUCT_MODEL := Xperia M4 Aqua (AOSP)
