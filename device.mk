@@ -56,4 +56,4 @@ PRODUCT_PROPERTY_OVERRIDES := \
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/kanuti/platform.mk)
-$(call inherit-product, vendor/sony/tulip/tulip-vendor.mk)
+$(call inherit-product, vendor/sony/kanuti-tulip/tulip-vendor.mk)
