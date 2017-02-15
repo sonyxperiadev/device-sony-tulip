@@ -15,6 +15,9 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/tulip/aosp_e2303.mk)
 
+# Reserve space for data encryption (12213813248-16384)
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 12213796864
+
 PRODUCT_NAME := aosp_e2306
 PRODUCT_DEVICE := tulip
 PRODUCT_MODEL := Xperia M4 Aqua (AOSP)
