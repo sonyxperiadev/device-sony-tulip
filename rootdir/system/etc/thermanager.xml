@@ -222,10 +222,10 @@
 		<threshold>
 			<mitigation name="charge_en" level="off" />
 		</threshold>
-		<threshold trigger="464" clear="442">
+		<threshold trigger="46400" clear="44200">
 			<mitigation name="charge_en" level="1" />
 		</threshold>
-		<threshold trigger="800" clear="780">
+		<threshold trigger="80000" clear="78000">
 			<mitigation name="charge_en" level="2" />
 		</threshold>
 	</configuration>
