@@ -12,6 +12,9 @@
 		<resource name="zone8" type="tz">/sys/class/thermal/thermal_zone8</resource>
 		<resource name="zone9" type="tz">/sys/class/thermal/thermal_zone9</resource>
 		<resource name="zone10" type="tz">/sys/class/thermal/thermal_zone10</resource>
+		<resource name="zone11" type="tz">/sys/class/thermal/thermal_zone11</resource>
+		<resource name="zone12" type="tz">/sys/class/thermal/thermal_zone12</resource>
+		<resource name="zone13" type="tz">/sys/class/thermal/thermal_zone13</resource>
 
 		<!-- generic cpufreq -->
 		<resource name="cpu0" type="sysfs">/sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq</resource>
@@ -37,8 +40,8 @@
 		<!-- device-specific -->
 		<resource name="backlight" type="sysfs">/sys/class/leds/lcd-backlight/max_brightness</resource>
 
-		<resource name="temp-emmc" type="msm-adc">/sys/devices/soc/00-vadc-3100/die_temp</resource>
-		<resource name="temp-batt" type="msm-adc">/sys/devices/soc/00-vadc-3100/batt_therm</resource>
+		<resource name="temp-emmc" type="msm-adc">/sys/devices/soc.0/00-vadc-3100/die_temp</resource>
+		<resource name="temp-batt" type="msm-adc">/sys/devices/soc.0/00-vadc-3100/batt_therm</resource>
 		<resource name="kgsl-3d0" type="sysfs">/sys/class/kgsl/kgsl-3d0/max_gpuclk</resource>
 		<!--<resource name="dc" type="sysfs">/sys/class/power_supply/qpnp-dc/current_max</resource>-->
 		<resource name="usb" type="sysfs">/sys/class/power_supply/usb/current_max</resource>
@@ -133,9 +136,9 @@
 	</control>
 
 	<control name="gpu">
-		<mitigation level="off"><value resource="gpu">550000000</value></mitigation>
-		<mitigation level="1"><value resource="gpu">400000000</value></mitigation>
-		<mitigation level="2"><value resource="gpu">220000000</value></mitigation>
+		<mitigation level="off"><value resource="kgsl-3d0">550000000</value></mitigation>
+		<mitigation level="1"><value resource="kgsl-3d0">400000000</value></mitigation>
+		<mitigation level="2"><value resource="kgsl-3d0">220000000</value></mitigation>
 		<mitigation level="3"><value resource="shutdown" /></mitigation>
 	</control>
 
@@ -219,10 +222,10 @@
 		<threshold>
 			<mitigation name="charge_en" level="off" />
 		</threshold>
-		<threshold trigger="464" clear="442">
+		<threshold trigger="46400" clear="44200">
 			<mitigation name="charge_en" level="1" />
 		</threshold>
-		<threshold trigger="800" clear="780">
+		<threshold trigger="80000" clear="78000">
 			<mitigation name="charge_en" level="2" />
 		</threshold>
 	</configuration>
