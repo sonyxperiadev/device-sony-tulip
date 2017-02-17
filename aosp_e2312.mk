@@ -12,10 +12,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/aosp_e2303.mk \
-                     $(LOCAL_DIR)/aosp_e2306.mk \
-                     $(LOCAL_DIR)/aosp_e2312.mk \
-                     $(LOCAL_DIR)/aosp_e2333.mk \
-                     $(LOCAL_DIR)/aosp_e2353.mk \
-                     $(LOCAL_DIR)/aosp_e2363.mk
+# Inherit from those products. Most specific first.
+$(call inherit-product, device/sony/tulip/aosp_e2333.mk)
 
+# No LTE
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.telephony.default_network=8,1
+
+PRODUCT_NAME := aosp_e2312
+PRODUCT_DEVICE := tulip
+PRODUCT_MODEL := Xperia M4 Aqua Dual (AOSP)
+PRODUCT_BRAND := Sony
+PRODUCT_MANUFACTURER := Sony
