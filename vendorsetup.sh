@@ -15,4 +15,8 @@
 #
 
 add_lunch_combo aosp_e2303-userdebug
+add_lunch_combo aosp_e2306-userdebug
+add_lunch_combo aosp_e2312-userdebug
 add_lunch_combo aosp_e2333-userdebug
+add_lunch_combo aosp_e2353-userdebug
+add_lunch_combo aosp_e2363-userdebug
