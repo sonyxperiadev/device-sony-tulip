@@ -13,10 +13,12 @@
 # limitations under the License.
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, device/sony/tulip/aosp_e2333.mk)
+$(call inherit-product, device/sony/tulip/aosp_e2303.mk)
 
-# No LTE
+# DualSim (NO LTE)
 PRODUCT_PROPERTY_OVERRIDES += \
+    persist.multisim.config=dsds \
+    persist.radio.multisim.config=dsds \
     ro.telephony.default_network=8,1
 
 PRODUCT_NAME := aosp_e2312
