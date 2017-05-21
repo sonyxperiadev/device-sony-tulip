@@ -12,8 +12,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Device path
+DEVICE_PATH := device/sony/tulip
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/tulip/aosp_e2303.mk)
+
+# NO LTE RADIO
+DEVICE_PACKAGE_OVERLAYS += \
+    $(DEVICE_PATH)/radio
 
 # DualSim (NO LTE)
 PRODUCT_PROPERTY_OVERRIDES += \
