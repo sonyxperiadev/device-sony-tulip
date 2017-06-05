@@ -64,3 +64,6 @@ $(call inherit-product, vendor/sony/kanuti-tulip/tulip-vendor.mk)
 
 # copy NFC firmware
 $(call inherit-product-if-exists, vendor/nxp/nxp-vendor.mk)
+
+# include optional vendor configuration
+$(call inherit-product-if-exists, vendor/qcom/proprietary/common/build/qcom-packages.mk)
