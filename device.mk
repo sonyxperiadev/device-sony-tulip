@@ -20,6 +20,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Device etc
 PRODUCT_COPY_FILES := \
+    $(DEVICE_PATH)/system/etc/audio_policy.conf:system/etc/audio_policy.conf \
     $(DEVICE_PATH)/rootdir/system/etc/sensor/sensord_cfg_axis.txt:system/etc/sensor/sensord_cfg_axis.txt \
     $(DEVICE_PATH)/rootdir/system/etc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
     $(DEVICE_PATH)/rootdir/system/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
