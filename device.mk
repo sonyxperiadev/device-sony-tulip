@@ -43,6 +43,7 @@ PRODUCT_COPY_FILES += \
 
 # Device Init
 PRODUCT_PACKAGES += \
+    fstab.tulip \
     init.recovery.tulip \
     init.tulip \
     ueventd.tulip
