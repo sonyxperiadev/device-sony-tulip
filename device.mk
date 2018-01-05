@@ -16,7 +16,7 @@
 DEVICE_PATH := device/sony/tulip
 
 DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlay
+    device/sony/tulip/overlay
 
 # Device Specific Permissions
 PRODUCT_COPY_FILES := \
