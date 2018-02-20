@@ -170,10 +170,6 @@
     <ctl name="IIR1 Enable Band5" value="0" />
     <!-- IIR -->
 
-    <!-- HAC -->
-    <ctl name="HAC Function" value="OFF" />
-    <!-- HAC End -->
-
     <!-- ADSP testfwk -->
     <ctl name="MI2S_DL_HL Switch" value="0" />
     <!-- ADSP testfwk end-->
@@ -626,15 +622,6 @@
         <ctl name="RDAC2 MUX" value="RX1" />
         <ctl name="RX1 Digital Volume" value="84" />
         <ctl name="EAR PA Gain" value="POS_1P5_DB" />
-        <ctl name="EAR_S" value="Switch" />
-    </path>
-
-    <path name="hac-voice-handset">
-        <ctl name="EAR PA Boost" value="ENABLE" />
-        <ctl name="RX1 MIX1 INP1" value="RX1" />
-        <ctl name="RDAC2 MUX" value="RX1" />
-        <ctl name="RX1 Digital Volume" value="84" />
-        <ctl name="EAR PA Gain" value="POS_6_DB" />
         <ctl name="EAR_S" value="Switch" />
     </path>
 
