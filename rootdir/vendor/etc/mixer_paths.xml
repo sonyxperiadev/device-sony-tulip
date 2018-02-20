@@ -51,7 +51,6 @@
     <ctl name="EAR_S" value="ZERO" />
     <ctl name="HPHL" value="ZERO" />
     <ctl name="HPHR" value="ZERO" />
-    <ctl name="SPK DAC Switch" value="0" />
     <ctl name="Speaker Boost" value="DISABLE" />
     <ctl name="MICBIAS CAPLESS Switch" value="0" />
     <ctl name="EAR PA Gain" value="POS_1P5_DB" />
@@ -498,20 +497,15 @@
 
     <path name="speaker">
         <ctl name="RX3 MIX1 INP1" value="RX1" />
-        <ctl name="SPK DAC Switch" value="1" />
-        <ctl name="RX3 Digital Volume" value="82" />
+        <ctl name="SPK" value="Switch" />
     </path>
 
     <path name="speaker-ringtone">
-        <ctl name="RX3 MIX1 INP1" value="RX1" />
-        <ctl name="SPK DAC Switch" value="1" />
-        <ctl name="RX3 Digital Volume" value="84" />
+        <path name="speaker" />
     </path>
 
     <path name="fm-speaker">
-        <ctl name="RX3 MIX1 INP1" value="RX1" />
-        <ctl name="SPK DAC Switch" value="1" />
-        <ctl name="RX3 Digital Volume" value="80" />
+        <path name="speaker" />
     </path>
 
     <path name="speaker-mic">
@@ -626,9 +620,7 @@
     </path>
 
     <path name="voice-speaker">
-        <ctl name="RX3 MIX1 INP1" value="RX1" />
-        <ctl name="SPK DAC Switch" value="1" />
-        <ctl name="RX3 Digital Volume" value="84" />
+        <path name="speaker" />
     </path>
 
     <path name="voice-speaker-mic">
@@ -670,9 +662,7 @@
         <ctl name="RX1 Digital Volume" value="73" />
         <ctl name="RX2 Digital Volume" value="73" />
         <ctl name="EAR PA Gain" value="POS_1P5_DB" />
-        <ctl name="RX3 MIX1 INP1" value="RX1" />
-        <ctl name="SPK DAC Switch" value="1" />
-        <ctl name="RX3 Digital Volume" value="84" />
+        <path name="speaker" />
     </path>
 
     <path name="usb-headphones">
@@ -879,9 +869,7 @@
     </path>
 
     <path name="voice-tty-hco-speaker">
-        <ctl name="RX3 MIX1 INP1" value="RX1" />
-        <ctl name="SPK DAC Switch" value="1" />
-        <ctl name="RX3 Digital Volume" value="84" />
+        <path name="speaker" />
     </path>
 
     <path name="ADSP testfwk">
