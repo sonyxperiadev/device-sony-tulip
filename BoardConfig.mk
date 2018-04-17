@@ -14,7 +14,7 @@
 
 include device/sony/kanuti/PlatformConfig.mk
 
-TARGET_BOOTLOADER_BOARD_NAME := E2303
+TARGET_BOOTLOADER_BOARD_NAME := kanuti
 
 # Platform
 PRODUCT_PLATFORM := kanuti
