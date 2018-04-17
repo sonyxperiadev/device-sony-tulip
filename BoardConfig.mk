@@ -16,9 +16,6 @@ include device/sony/kanuti/PlatformConfig.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := kanuti
 
-# Platform
-PRODUCT_PLATFORM := kanuti
-
 BOARD_KERNEL_CMDLINE += androidboot.hardware=tulip
 
 # Partition information
