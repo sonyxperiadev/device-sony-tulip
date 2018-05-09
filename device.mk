@@ -48,10 +48,6 @@ PRODUCT_PACKAGES += \
     init.tulip \
     ueventd.tulip
 
-# Lights
-PRODUCT_PACKAGES += \
-    lights.tulip
-
 # Simple PowerHAL
 PRODUCT_PACKAGES += \
     power.tulip
