@@ -60,6 +60,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     nfc_nci.tulip
 
+# Telephony Packages (AOSP)
+PRODUCT_PACKAGES += \
+    InCallUI \
+    Stk
+
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREBUILT_DPI := xhdpi hdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
