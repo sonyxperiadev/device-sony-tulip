@@ -45,8 +45,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.tulip \
     init.recovery.tulip \
-    init.tulip \
-    ueventd.tulip
+    init.tulip
 
 # Simple PowerHAL
 PRODUCT_PACKAGES += \
